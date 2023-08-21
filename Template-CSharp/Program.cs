@@ -18,7 +18,7 @@ namespace Template_CSharp
             Console.WriteLine("Enter your message: ");
             string message = Console.ReadLine();
             string postData = "code=" + Uri.EscapeDataString(code) + "&message=" + Uri.EscapeDataString(message);
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://sktools.sytes.net/webhookhider/API.php");
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://sktools.sytes.net/webhookhider/API");
             request.Method = "POST";
             request.ContentType = "application/x-www-form-urlencoded";
             request.ContentLength = postData.Length;
